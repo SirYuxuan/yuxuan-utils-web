@@ -16,6 +16,7 @@ module.exports = {
     'semi': [2, 'never'],
     'quotes': [2, 'single'],
     'no-var': 2,
+    'vue/multi-word-component-names':0,
     'no-trailing-spaces': 0,
     'no-multiple-empty-lines': 0,
   }

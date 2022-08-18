@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="" style="font-size: 209.84px">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +7,21 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
-  <body>
+  <body style="background: #F7F8FA;">
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <script>
+        window.onresize = ()=>{
+            let e = document.documentElement
+                , t = e.clientWidth;
+            t = 1080 < t ? 1080 + .6 * (t - 1080) : t < 900 ? 900 : t,
+                e.style.fontSize = t / 7.5 + "px"
+            let o = document.getElementById("main");
+            o.style.minHeight = document.documentElement.clientHeight - 52 + "px"
+        }
+
+    </script>
   </body>
 </html>
