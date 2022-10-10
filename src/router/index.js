@@ -10,6 +10,7 @@ const routes = [
   { path:'/game/cube',component:()=> import('@/views/game/cube/index') ,meta:{title:'3D魔方'} },
   { path:'/game/fly',component:()=> import('@/views/game/fly/index') ,meta:{title:'盲打高手打飞字'} },
   { path:'/game/ninja',component:()=> import('@/views/game/ninja/index') ,meta:{title:'水果忍者-切水果'} },
+  { path:'/eve/buyback/yuxuan',component:()=> import('@/views/gameutil/eve/buyback/yuxuan/index') ,meta:{title:'雨轩EVE物品回购'} },
 ]
 
 const router = createRouter({

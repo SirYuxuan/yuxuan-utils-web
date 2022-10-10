@@ -69,4 +69,5 @@ export default [
     groupIcon: 'icon-game',
     groupPath: 'game'
   }
+
 ]
