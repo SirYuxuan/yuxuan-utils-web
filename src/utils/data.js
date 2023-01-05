@@ -1,5 +1,15 @@
 export default [
   {
+    title: '时间戳转换',
+    path: '/code/timestamp',
+    tag: ['时间戳'],
+    describe: 'timestamp时间戳时间相互转换工具',
+    type: 'hot',
+    group: '代码工具',
+    groupIcon: 'icon-code',
+    groupPath: 'code'
+  },
+  {
     title: 'SQL转JSON',
     path: '/code/sql2json',
     tag: ['JSON', 'SQL', '代码生成'],
