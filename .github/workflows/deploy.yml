@@ -31,7 +31,7 @@ jobs:
         user: ${{ secrets.YUXUAN_MAIN_SERVER_USER }}
         pass: ${{ secrets.YUXUAN_MAIN_SERVER_PASS }}
         scp: |
-          ./dist/* => /mnt/project/web/utils
+          ./dist/dist.zip => /mnt/project/web/utils
         last_ssh: |
           echo $LASTSSH 
           cd /mnt/project/web/utils
