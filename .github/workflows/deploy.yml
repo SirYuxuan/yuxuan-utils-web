@@ -35,6 +35,6 @@ jobs:
         last_ssh: |
           echo $LASTSSH 
           cd /mnt/project/web/utils
-          unzip dist.zip
+          unzip -o dist.zip
           rm dist.zip
   
