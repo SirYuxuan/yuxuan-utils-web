@@ -131,7 +131,6 @@ export default {
       details: false,
       breadcrumbNav:[],
       imgs: [
-        require('./assets/zzcc.jpg'),
         require('./assets/xbw.jpg'),
       ],
       swiperOption: {
