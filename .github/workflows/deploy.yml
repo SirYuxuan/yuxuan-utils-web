@@ -18,9 +18,8 @@ jobs:
       with:
         node-version: 18.x
         cache: 'npm'
-    - run: npm i -g pnpm
-    - run: pnpm install
-    - run: pnpm run build
+    - run: npm install
+    - run: npm run build
     - run: ls -l
     # 上传部署
     - name: scp ssh pipelines
