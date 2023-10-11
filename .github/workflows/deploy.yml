@@ -18,16 +18,7 @@ jobs:
       with:
         node-version: 18.x
         cache: 'npm'
-    - name: Check for changes in package.json
-      id: package_changes
-      run: |
-        if [[ ! -z "$(git diff --name-only ${{ github.sha }}^ ${{ github.sha }} -- package.json)" ]]; then
-          echo "::set-output name=changes::true"
-        else
-          echo "::set-output name=changes::false"
-        fi
     - name: Install dependencies
-      if: steps.package_changes.outputs.changes == 'true'
       run: npm install
     - run: npm run build
     - run: ls -l
